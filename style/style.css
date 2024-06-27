@@ -328,29 +328,28 @@ ul {
 
 .pol_fon {
     background-color: white;
-    padding: 13px 4px;
+    padding: 10px 4px 10px 4px;
     border-radius: 25px;
 }
 .pol input {
     display: none;
 }
-label {
+.pol_fon label {
     padding: 10px;
     border-radius: 50%;
 }
-input:checked + label {
+.pol_fon input:checked + label {
     background-color: #DFCCB7;
 }
 
 .pol__dan {
     display: flex;
     gap: 30px;
-    align-items: end;
-    margin-top: 30px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .racion__height, .racion__weight {
-    
     width: 100px;
     height: 48px;
 }
@@ -380,3 +379,108 @@ input:checked + label {
     font-weight: Bold;
     font-size: 16px;
 }
+
+/* section__calorie */
+
+.section__calorie {
+    margin-top: 100px;
+}
+
+.calorie__title {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.calorie__subtitle {
+    padding-top: 30px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 20px;
+    color: #493E3E;
+    padding-bottom: 20px;
+}
+
+.calorie__card {
+    display: flex;
+    gap: 30px;
+}
+input {
+    display: none;
+}
+
+.card  {
+    border: 1px solid #DFCCB7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px 40px;
+    text-align: center;
+    width: 250px;
+}
+
+.calorie__card input:checked + label {
+    background-color: #DFCCB7;
+}
+
+.calorie {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.calorie__blud {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    color: #493E3E;
+}
+
+.calorie__puck {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* choosing */
+
+.choosing {
+    display: flex;
+    padding-top: 40px;
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.choosing__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.choosing__input input {
+    display: none;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.choosing__input input:checked + label {
+    background-color: #DFCCB7;
+    border-radius: 50%;
+}
+
+.choosing__input label {
+    padding: 9px 14px;
+}
+
+.choosing__input {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #DFCCB7;
+    border-radius: 25px;
+    padding: 4px 14px;
+    align-items: center;
+}
+
