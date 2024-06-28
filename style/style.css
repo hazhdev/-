@@ -405,7 +405,7 @@ ul {
     display: flex;
     gap: 30px;
 }
-input {
+.calorie__card input {
     display: none;
 }
 
@@ -484,3 +484,45 @@ input {
     align-items: center;
 }
 
+/* days */
+
+.days {
+    margin-top: 30px;
+}
+
+.days__subtitle {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.days__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    color: #A98C64;
+    padding-top: 20px;
+}
+
+.daily__ration {
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.daily__ration  input{
+    display: none;
+}
+
+ .daily__ration input:checked + label {
+    background-color: #DFCCB7;
+}
+
+.daily__ration-text {
+    padding: 8px 23px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 24px;
+    border: 1px solid #DFCCB7;
+    border-radius: 40px;
+}
