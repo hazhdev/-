@@ -477,7 +477,6 @@ ul {
 
 .choosing__input {
     display: flex;
-    gap: 10px;
     border: 1px solid #DFCCB7;
     border-radius: 25px;
     padding: 4px 14px;
@@ -525,4 +524,120 @@ ul {
     font-size: 24px;
     border: 1px solid #DFCCB7;
     border-radius: 40px;
+}
+
+.daily__food {
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.food__breakfast {
+    display: flex;
+    flex-direction: column;
+}
+
+.img__breakfast {
+    width: 265px;
+    height: 259px;
+}
+
+.breakfast__price {
+    display: flex;
+    gap: 15px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 12px;
+    color: #A98C64;
+}
+
+.breakfast__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.food__lunch {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 265px;
+}
+
+.img__lunch {
+    width: 265px;
+    height: 259px;
+}
+
+.lunch__price {
+    display: flex;
+    gap: 15px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 12px;
+    color: #A98C64;
+}
+
+.lunch__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.food__afternoon {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 265px;
+}
+
+.img__afternoon {
+    width: 265px;
+    height: 259px;
+}
+
+.afternoon__price {
+    display: flex;
+    gap: 15px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 12px;
+    color: #A98C64;
+}
+
+.afternoon__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.food__dinner {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 265px;
+}
+
+.img__dinner {
+    width: 265px;
+    height: 259px;
+}
+
+.dinner__price {
+    display: flex;
+    gap: 15px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 12px;
+    color: #A98C64;
+}
+
+.dinner__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
 }
