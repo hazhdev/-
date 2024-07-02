@@ -9,6 +9,15 @@ body {
     background-color: #E5E5E5;
 }
 
+input + label {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -99,6 +108,11 @@ ul {
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
+}
+
+.menu__list:hover {
+    color: #DFCCB7;
+    transition: 0.8s;
 }
 
 .nav__phone {
@@ -369,7 +383,7 @@ ul {
     height: 48px;
 }
 
-.racion-a {
+.racion-btn {
     text-decoration: none;
     background-color: #4D8F76;
     color: #fff;
@@ -640,4 +654,65 @@ ul {
     font-weight: 500;
     font-size: 16px;
     padding-top: 10px;
+}
+
+/* order */
+
+.order {
+    background-color: #A2BE95;
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    border-radius: 0 0 30px 30px;
+    height: 140px;
+}
+
+.order__left {
+    padding: 30px 30px;
+}
+
+.order__btn-calorie {
+    padding: 10px 32px;
+    border-radius: 40px;
+    background-color: #4D8F76;
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.oreder__callorie-text {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.order__right {
+    display: flex;
+    gap: 45px;
+    padding-top: 38px;
+}
+
+.order__img {
+    width: 71px;
+    height: 65px;
+}
+
+.order__subtitle {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+
+.order__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 8px;
+    line-height: 20px;
 }
