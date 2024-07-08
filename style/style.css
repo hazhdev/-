@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #FAF6F2;
 }
 
 input + label {
@@ -968,4 +968,91 @@ ul {
     border-radius: 40px;
 }
 
+.questions__buttom {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 60px;
+}
+
+.questions__buttom  button{
+    background-color: #FAF6F2;
+}
+
+.questions__buttom button .del, img {
+    display: block;
+
+}
+
+.questions__delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery__buttom-title {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 24px;
+    text-align: start;
+}
+
+.delivery__buttom-text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 15px;
+    color: #493E3E;
+    padding-top: 20px;
+    text-align: start;
+    display: none;
+}
+
+.questions__time-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions__deys-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions__suspend-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions__delivery:hover .del .delivery__buttom-text {
+    display: block;
+}
+
+.questions__delivery:hover img {
+    transform: rotate(180deg);
+}
+
+.questions__time-delivery:hover .del .delivery__buttom-text {
+    display: block;
+}
+
+.questions__time-delivery:hover img {
+    transform: rotate(180deg);
+}
+.questions__deys-delivery:hover .del .delivery__buttom-text {
+    display: block;
+}
+
+.questions__deys-delivery:hover img {
+    transform: rotate(180deg);
+}
+
+.questions__suspend-delivery:hover .del .delivery__buttom-text {
+    display: block;
+}
+
+.questions__suspend-delivery:hover img {
+    transform: rotate(180deg);
+}
 
