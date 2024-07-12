@@ -117,18 +117,18 @@
                             </div>
                         </div>
                         <div class="pol__dan">
-                            <input type="text" class="racion__weight" value="Ваш все">
-                            <input type="text" class="racion__height" value="Ваш рост">
-                            <input type="text" class="racion__age" value="Ваш возраст">
-                            <input type="text" class="racion__activ" value="Активность">
-                            <input type="text" class="racion__goal" value="Выберите цель">
+                            <input type="text" class="racion__weight" placeholder="Ваш вес">
+                            <input type="text" class="racion__height" placeholder="Ваш рост">
+                            <input type="text" class="racion__age" placeholder="Ваш возраст">
+                            <input type="text" class="racion__activ" placeholder="Активность">
+                            <input type="text" class="racion__goal" placeholder="Выберите цель">
                             <button class="racion-btn" id="racion-modal">Расчитать рацион</button>
                         </div>
                     </div>
                 </div>
                 <div class="section__calorie">
                     <h1 class="calorie__title">Программа ПремиумБоул</h1>
-                    <form class="calorie__dishes">
+                    <form method="get" class="calorie__dishes">
                         <h4 class="calorie__subtitle">Калорийность</h4>
                         <div class="calorie__card">
                             <input name="calorie__food" type="radio" class="card__text" id="calorie3">
@@ -400,7 +400,7 @@
                     <button class="questions__delivery">
                         <div class="del">
                             <h1 class="delivery__buttom-title">Как я могу оплатить заказ?</h1>
-                            <p class="delivery__buttom-text">Вы можете оплатить заказ через сбер т-бфнк</p>
+                            <p class="delivery__buttom-text">Вы можете оплатить заказ через сбер, т-бфнк</p>
                         </div>
                         <img src="img/Vector.png" alt="">
                     </button>
@@ -434,6 +434,99 @@
             </div>
         </div>
     </section>
+
+    <section class="section__nutritionist">
+        <div class="container">
+            <div class="nutritionist">
+                <div class="nutritionist__women">
+                    <h1 class="nutritionist__title">
+                        Бесплатная консультация <br>
+                        диетолога
+                    </h1>
+                    <form class="form__nutritionist" method="get">
+                        <div class="nutritionist__form">
+                            <input placeholder="Ваше Имя" class="nutritionist__name">
+                            <input placeholder="Телефон" class="nutritionist__number">
+                        </div>
+                        <div class="nutritionist__veronika-btn">
+                            <a href="#" class="nutritionist__btn">Отправить заявку</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="nutritionist__veronika">
+                    <div class="veronika__socset">
+                        <img src="img/insta.png" alt="">
+                        <p class="veronika">Нутрициолог Вероника <br>
+                            <span>vnk_fitness</span>
+                        </p>
+                    </div>
+                    <img src="img/nutritionist.png" alt="" class="veronika__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__try">
+        <div class="container">
+            <div class="try__racion">
+                <h1 class="try__title">Пробный рацион</h1>
+                <p class="try__text">Сомневаетесь? Протестируйте наш сервис и еду. <br>
+                    Начните с пробного меню на два дня со скидкой 20% за 2 800 ₽ (1 200 ккал)
+                </p>
+                <div class="try-a">
+                    <a href="#" class="tryt">Попробовать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__subscribe">
+        <div class="container">
+            <form class="subscribe" method="get">
+                <div class="subscribe__left">
+                    <h1 class="subscribe__title">Будьте всегда в курсе!</h1>
+                    <div class="subscribe__img-text">
+                        <img src="img/subscribe.png" alt="" class="subscribe__img">
+                        <p class="subscribe__text">Подпишитесь на рассылку и будьте всегда в курсе новинок, акций и
+                            новостей!
+                        </p>
+                    </div>
+                </div>
+                <div class="subscribe__right">
+                    <input placeholder="Укажите вашу почту" class="subscribe__email">
+                    <a href="#" class="subscrible">Подписаться</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__infa">
+                <div class="footer__right">
+                    <div class="footer__numder">
+                        <div class="footer__phone-infa">
+                            <a href="89885001700" class="footer__phone">+7 988 500-1-700</a>
+                            <p class="footer__chart">c 09:00 до 21:00</p>
+                        </div>
+                        <a class="footer__mail">hello@pora-poest.com</a>
+                    </div>
+                    <div class="footer__text">
+                        <p class="text1">ООО «ПораПоесть», г. Краснодар, ул. Кубанская Набережная улица, дом 5, офис 4
+                        </p>
+                        <p class="text2">© 2021 ПораПоесть — сервис доставки прогрессивного питания. </p>
+                        <p class="text3">Фотографии блюд на сайте являются вариантом сервировки блюда. Внешний вид блюда
+                            может отличаться от фотографии на сайте.
+                            Указывая электронную почту и номер телефона на сайте, вы соглашаетесь с условиями
+                            <span>Публичной
+                                оферты</span> и <span>Политикой конфедициальности</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__left"></div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
