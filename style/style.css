@@ -988,6 +988,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
 }
 
 .delivery__buttom-title {
@@ -1011,6 +1012,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .questions__deys-delivery {
@@ -1031,6 +1033,12 @@ ul {
 
 .questions__delivery:hover img {
     transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+
+.questions__delivery img {
+    transition: 0.5s;
 }
 
 .questions__time-delivery:hover .del .delivery__buttom-text {
@@ -1039,13 +1047,24 @@ ul {
 
 .questions__time-delivery:hover img {
     transform: rotate(180deg);
+    transition: 0.5s;
 }
+
+.questions__time-delivery img {
+    transition: 0.5s;
+}
+
 .questions__deys-delivery:hover .del .delivery__buttom-text {
     display: block;
 }
 
 .questions__deys-delivery:hover img {
     transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.questions__deys-delivery img {
+    transition: 0.5s;
 }
 
 .questions__suspend-delivery:hover .del .delivery__buttom-text {
@@ -1054,5 +1073,268 @@ ul {
 
 .questions__suspend-delivery:hover img {
     transform: rotate(180deg);
+    transition: 0.5s;
 }
 
+.questions__suspend-delivery img {
+    transition: 0.5s;
+}
+
+
+
+/* section__nutritionist */
+
+.section__nutritionist {
+    background-color: #A2BE95;
+    margin-top: 100px;
+    position: relative;
+    height: 416px;
+}
+
+.nutritionist {
+    display: flex;
+}
+
+.nutritionist__title {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 48px;
+    color: #FAF6F2;
+    padding-top: 30px;
+}
+
+.nutritionist__veronika {
+    position: absolute;
+    bottom: 0;
+    right: 400px;
+    display: flex;
+}
+
+.form__nutritionist {
+    padding-top: 50px;
+}
+
+.nutritionist__form {
+    display: flex;
+    gap: 30px;
+}
+
+.nutritionist__form input {
+    width: 320px;
+    height: 48px;
+    padding-left: 20px;
+    border-radius: 40px;
+}
+
+.nutritionist__name {
+    border: none;
+}
+
+.nutritionist__veronika-btn{
+    padding-top: 40px;
+}
+
+.nutritionist__btn {
+    text-decoration: none;
+    color: #FAF6F2;
+    padding: 10px 90px;
+    border-radius: 40px;
+    background-color: #4D8F76;
+}
+
+.nutritionist__veronika {
+    align-items: end;
+    display: flex;
+    gap: 40px;
+}
+
+.veronika__socset {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.veronika__socset img {
+    border-radius: 50%;
+    padding: 14px;
+    border: 2px solid #fff;
+}
+
+.veronika {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FAF6F2;
+}
+
+
+/* section__try */
+
+.section__try {
+    margin-top: 90px;
+}
+
+.try__racion {
+    display: flex;
+    flex-direction: column;
+}
+
+.try__title {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.try__text {
+    color: #493E3E;
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 51px;
+}
+
+.try-a {
+    margin-top: 40px;
+}
+
+.tryt {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FAF6F2;
+    padding: 10px 33px;
+    border-radius: 40px;
+    background-color: #4D8F76;
+
+}
+
+/* section__subscribe */
+
+.section__subscribe {
+    margin-top: 150px;
+    background-color: #B89683;
+    height: 162px;
+    border-radius: 30px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.subscribe__title {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 48px;
+    color: #fff;
+}
+
+.subscribe__img-text{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.subscribe__text {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.subscribe__right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.subscribe__email {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 16px;
+    color: #756D6D;
+    width: 365px;
+    height: 46px;
+    padding-left: 22px;
+    border-radius: 40px;
+}
+
+.subscrible {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FAF6F2;
+    padding: 10px 33px;
+    border-radius: 40px;
+    background-color: #4D8F76;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer__numder{
+    display: flex;
+    gap: 108px;
+}
+
+.footer__phone {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 24px;
+    color: #493E3E;
+    text-decoration: none;
+}
+
+.footer__chart {
+    font-family: 'TT Norms Pro';
+    font-weight: 500;
+    font-size: 12px;
+    color: #493E3E;
+}
+
+.footer__mail {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 24px;
+    color: #493E3E;
+}
+
+.footer__text {
+    padding-top: 30px;
+}
+
+.text1 {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 16px;
+    color: #493E3E;
+    padding-top: 30px;
+}
+
+.text2 {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 16px;
+    color: #493E3E;
+    padding-top: 30px;
+}
+
+.text3 {
+    font-family: 'TT Norms Pro';
+    font-weight: bold;
+    font-size: 16px;
+    color: #493E3E;
+    padding-top: 30px;
+}
+
+.text3 span {
+    color: #1EB949;
+}
