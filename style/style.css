@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
 * {
     margin: 0;
@@ -15,6 +15,178 @@ ol, ul, li {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+/* nav */
+
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.nav__top-left{
+    display: flex;
+    gap: 30px;
+}
+
+.nav__top-site {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    gap: 15px;
+}
+
+.navsite__moskov{
+    border: none;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.navsite__SaintPetersburg {
+   display: none;
+    border: none;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.nav__phone {
+    display: flex;
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: orangered;
+}
+
+.nav__top-list{
+    display: flex;
+    gap: 64px;
+}
+
+.nav__top-item{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
+}
+
+.nav__bottom{
+    padding-top: 32px;
+    display: flex;
+    gap: 110px;
+}
+
+.nav__bottom-list {
+    display: flex;
+    gap: 81px;
+}
+
+.nav__bottom-item {
+    color: black;
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav__selection {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection__wrapper {
+    display: flex;
+}
+
+.selection__search-img{
+    padding-left: 30px;
+}
+
+.search{
+    border: none;
+    background-color: #eeecec;
+}
+
+.selection__pop{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+    background-color: #eeecec;
+    padding-left: 7px;
+    outline:none;
+    border: none;
+    width: 600px;
+    height: 60px;
+}
+
+.arrow {
+    border: none;
+    background-color: #eeecec;
+    padding-right: 32px;
+}
+
+.selection__arrow-img{
+    align-items: center;
+}
+
+.selection__category {
+    position: relative;
+}
+
+.nav__category{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    color: blueviolet;
+    display: flex;
+    gap: 142px;
+    align-items: center;
+    height: 60px;
+    padding: 0 32px;
+}
+
+.category__cargo {
+    position: absolute;
+    padding: 15px 30px;
+    border: none;   
+    width: 300px;
+    display: flex;
+    gap: 40px;
+    visibility: hidden;
+}
+
+.category__cargo a {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.cargo__left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cargo__right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav__user-shoping {
+    display: flex;
+    gap: 32px;
+}
+
+.header{
+    background-image: url(/img/header/sofa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

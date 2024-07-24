@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Мебель</title>
+    <link rel="shortcut icon" href="img/nav/logo.svg">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -15,9 +16,14 @@
             <div class="nav__top">
                 <div class="nav__top-left">
                     <p class="nav__top-site">Ваш регион:
-                        <button class="navsite">Москва
-                            <img src="img/nav/StrokeBottom.png" alt="" class="sile__img">
-                        </button>
+                        <span>
+                            <button class="navsite__moskov">Москва
+                                <img src="img/nav/StrokeBottom.png" alt="" class="sile__img">
+                            </button>
+                            <button class="navsite__SaintPetersburg">Санкт Петербург
+                                <img src="img/nav/StrokeBottom.png" alt="" class="sile__img">
+                            </button>
+                        </span>
                     </p>
                     <a href="84958854547" class="nav__phone"><img src="img/nav/mobile.png" alt="" class="phone__img">
                         +7(495) 885-45-47
@@ -33,36 +39,65 @@
                 </div>
             </div>
             <div class="nav__bottom">
-                <div class="nav__logo">
-                    <a href="" class="logo"><img src="img/nav/logo.svg" alt="" class="nav__logo"></a>
-                    <ul class="nav__bottom-list">
-                        <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Каталог</a></li>
-                        <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Магазины</a></li>
-                        <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Шоу-рум</a></li>
-                        <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Доставка и оплата</a></li>
-                        <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Дисконт</a></li>
-                        <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="nav__selection">
-                    <div class="selection__wrapper">
+                <a href="" class="logo">
+                    <img src="img/nav/logo.svg" alt="" class="nav__logo">
+                </a>
+                <ul class="nav__bottom-list">
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Каталог</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Магазины</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Шоу-рум</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Доставка и оплата</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Дисконт</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="nav__selection">
+                <form method="get" class="selection__wrapper">
+                    <button class="search">
                         <img src="img/nav/search.png" alt="" class="selection__search-img">
-                        <input placeholder="Я хочу купить" type="text" class="selection__pop">
-                        <img src="img/nav/arrow.png" alt="" class="selection__arrow-img">
-                    </div>
-                    <div class="selection__category">
-                        <button class="nav__category">Категория
-                            <img class="category__img" src="img/nav/StrokeBottom.png" alt="">
+                    </button>
+                    <input placeholder="Я хочу купить..." type="text" class="selection__pop">
+                    <button class="arrow">
+                        <img class="selection__arrow-img" src="img/nav/arrow.png" alt="">
+                    </button>
+                </form>
+                <div class="selection__category">
+                    <button class="nav__category" id="category">Категория
+                        <img class="category__img" src="img/nav/StrokeBottom.png" alt="">
+                        <button class="category__cargo" id="cargo">
+                            <div class="cargo__left">
+                                <a href="" class="cargo">Диваны</a>
+                                <a href="" class="cargo">Кресла</a>
+                                <a href="" class="cargo">Пуфы</a>
+                                <a href="" class="cargo">Кровати</a>
+                                <a href="" class="cargo">Тумбы</a>
+                            </div>
+                            <div class="cargo__right">
+                                <a href="" class="cargo">Комоды</a>
+                                <a href="" class="cargo">Стулья</a>
+                                <a href="" class="cargo">Столы</a>
+                                <a href="" class="cargo">Аксессуары</a>
+                            </div>
                         </button>
-                    </div>
-                    <div class="nav__user-shoping">
-                        <a href="" class="user"><img src="img/nav/user.png" alt="" class="user__img"></a>
-                        <a href="" class="shoping"><img src="img/nav/shopping_cart.svg" alt="" class="shoping__img"></a>
-                    </div>
+                    </button>
+                </div>
+                <div class="nav__user-shoping">
+                    <a href="./user/user.html" class="user">
+                        <img src="img/nav/user.png" alt="" class="user__img">
+                    </a>
+                    <a href="./cart/cart.html" class="shoping">
+                        <img src="img/nav/shopping_cart.svg" alt="" class="shoping__img">
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <header class="header">
+        <div class="container">
+
+        </div>
+    </header>
 
 </body>
 
