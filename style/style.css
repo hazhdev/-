@@ -15,7 +15,7 @@ ol, ul, li {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -130,63 +130,449 @@ ol, ul, li {
     padding-right: 32px;
 }
 
-.selection__arrow-img{
+.nav__category {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.selection__category {
-    position: relative;
-}
-
-.nav__category{
+    padding: 0 20px;
     font-family: 'Open sans';
     font-weight: 400;
     font-size: 16px;
-    border: none;
     color: blueviolet;
-    display: flex;
-    gap: 142px;
-    align-items: center;
-    height: 60px;
-    padding: 0 32px;
-}
-
-.category__cargo {
-    position: absolute;
-    padding: 15px 30px;
-    border: none;   
     width: 300px;
-    display: flex;
-    gap: 40px;
-    visibility: hidden;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.category__cargo a {
-    font-family: 'Open sans';
-    font-weight: 400;
-    font-size: 16px;
-    color: black;
+.nav__category:hover img {
+    transform: rotate(-180deg);
+    transition: 0.6s;
 }
 
-.cargo__left {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.cargo__right {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+.nav__category > span { 
+    margin-right: 20px; 
+  }
+  
+  .category__img {
+    margin-left: auto;
+  }
+  
+  .category__cargo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .nav__category:hover .category__cargo {
+    display: block;
+  }
 
 .nav__user-shoping {
     display: flex;
     gap: 32px;
 }
 
-.header{
+/* header */
+
+.header {
+    margin-top: 32px;
     background-image: url(/img/header/sofa.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 400px;
+    background-position: center;
+    height: 400px;
+    position: relative;  
+}
+
+.header__title-btn {
+    padding-top: 80px;
+}
+
+.header__title {
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 48px;
+    color: grey;
+}
+
+.header__btn {
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 50px;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__images {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__image {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: none;
+}
+
+.slider__image.active {
+    display: block;
+}
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 23px 10px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.slider__dot.active {
+    background-color: black;
+}
+
+
+/* offers */
+
+.offers{
+    margin-top: 70px;
+}
+
+.offers__title {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers__furniture {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow__slider {
+    display: flex;
+    gap: 14px;
+}
+
+.furniture__left img:hover{
+    color: blueviolet;
+}
+
+.furniture__right img {
+    transform: rotate(-180deg);
+}
+
+.furniture__cart {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.furniture__armchair{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.armchair__discount{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    background-color: chocolate;
+    color: #fff;
+    padding: 7px 30px;
+    width: 102px;
+    height: 30px;
+    align-items: center;
+}
+
+.armchair__img{
+    padding: 20px;
+}
+
+.armchair__name {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.discount{
+    display: flex;
+    gap: 30px;
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 23px;
+    color: chocolate;
+}
+
+.discount span {
+    color: gray;
+}
+
+.armchair__btn {
+    font-family: 'Open sans';
+    font-weight: 600;
+    font-size: 16px;
+    width: 128px;
+    padding: 19px 35px;
+    border-radius: 10px;
+    border: 1px solid purple;
+    color: purple;
+    cursor: pointer;
+}
+
+.furniture__sofa {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.sofa__discount {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    background-color: chocolate;
+    color: #fff;
+    padding: 7px 30px;
+    width: 102px;
+    height: 30px;
+    align-items: center;
+}
+
+.sofa__img{
+    padding: 20px;
+    width: 450px;
+    height: 245px;
+}
+
+.sofa__name{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.sofa__btn {
+    font-family: 'Open sans';
+    font-weight: 600;
+    font-size: 16px;
+    width: 128px;
+    padding: 19px 35px;
+    border-radius: 10px;
+    border: 1px solid purple;
+    color: purple;
+    cursor: pointer;
+}
+
+.furniture__watch{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.watch__discount{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    background-color: chocolate;
+    color: #fff;
+    padding: 7px 30px;
+    width: 102px;
+    height: 30px;
+    align-items: center;
+}
+
+.watch__img {
+    text-align: center;
+    width: 150px;
+    height: 218px;
+}
+
+.watch__name{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.watch__btn{
+    font-family: 'Open sans';
+    font-weight: 600;
+    font-size: 16px;
+    width: 128px;
+    padding: 19px 35px;
+    border-radius: 10px;
+    border: 1px solid purple;
+    color: purple;
+    cursor: pointer;
+}
+
+
+/* rating */
+
+.rating {
+   margin-top: 70px;
+}
+
+.rating__titile{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.sofa__top {
+    margin-top: 26px;
+    display: flex;
+    gap: 30px;
+}
+
+.sofa__bottom {
+    margin-top: 36px;
+    display: flex;
+    gap: 40px;
+}
+
+.rating__block-sofa {
+    height: 320px;
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+}
+
+.rating__star {
+    display: flex;
+    gap: 5px;
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: chocolate;
+}
+
+.rating__name{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.rating__price {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+}
+
+.rating__btn {
+    font-family: 'Open sans';
+    font-weight: 600;
+    font-size: 16px;
+    width: 128px;
+    padding: 19px 35px;
+    border-radius: 10px;
+    border: 1px solid purple;
+    color: purple;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.rating__product__btn{
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 16px;
+    padding: 22px 36px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+
+/* oxford */
+
+.oxford {
+    margin-top: 73px;
+    background-image: url(/img/ratings/oxford.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 600px;
+}
+
+.oxford__title {
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 32px;
+    color: bisque;
+    width: 508px;
+    padding-top: 15%;
+}
+
+.oxford__title span{
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.oxford__btn{
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 50px;
+    padding: 22px 31px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* category */
+
+.category {
+    margin-top: 70px;
 }
