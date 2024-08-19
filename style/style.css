@@ -15,7 +15,7 @@ ol, ul, li {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -160,13 +160,11 @@ ol, ul, li {
   }
   
   .category__cargo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: #fff; 
     border-radius: 10px;
     display: none;
+    margin-top: 100px;
   }
   
   .nav__category:hover .category__cargo {
@@ -314,10 +312,9 @@ ol, ul, li {
     font-size: 14px;
     background-color: chocolate;
     color: #fff;
-    padding: 7px 30px;
-    width: 102px;
+    padding: 5px 10px;
+    width: 100px;
     height: 30px;
-    align-items: center;
 }
 
 .armchair__img{
@@ -369,10 +366,9 @@ ol, ul, li {
     font-size: 14px;
     background-color: chocolate;
     color: #fff;
-    padding: 7px 30px;
-    width: 102px;
+    padding: 5px 10px;
+    width: 100px;
     height: 30px;
-    align-items: center;
 }
 
 .sofa__img{
@@ -413,10 +409,9 @@ ol, ul, li {
     font-size: 14px;
     background-color: chocolate;
     color: #fff;
-    padding: 7px 30px;
-    width: 102px;
+    padding: 5px 10px;
+    width: 100px;
     height: 30px;
-    align-items: center;
 }
 
 .watch__img {
@@ -536,7 +531,7 @@ ol, ul, li {
     margin-top: 73px;
     background-image: url(/img/ratings/oxford.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     background-position: center;
     height: 600px;
 }
@@ -575,4 +570,256 @@ ol, ul, li {
 
 .category {
     margin-top: 70px;
+}
+
+.title__category{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.category__catalog{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.catalog__nav {
+    display: flex;
+    gap: 30px;
+}
+
+.catalog__nav a {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
+}
+
+.catalog__subtitle{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.catalog__text{
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.catalog__text img {
+    width: 22px;
+    height: 22px;
+}
+
+.catalog__bottom {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* nuws */
+
+.nuws {
+    margin-top: 70px;
+}
+
+.useful-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.useful__title {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.use{
+    display: flex;
+    gap: 15px;
+}
+
+.use__img2 img{
+    transform: rotate(-180deg);
+}
+
+.useful__buttom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.useful__buttom-left, .useful__buttom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between
+}
+
+.useful__text {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+}
+
+.useful__btn {
+    width: 128px;
+    height: 54px;
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* form */
+
+.form {
+    margin-top: 70px;
+}
+
+.form__title {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.form__text {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.form__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.form__send {
+    height: 54px;
+    border-radius: 10px;
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+    background-color: #eae9e9;
+}
+
+.form__btn{
+    width: 128px;
+    height: 54px;
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.aggrement {
+    display: flex;
+    gap: 10px;
+}
+
+.aggrement label {
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.aggrement label span{
+    color: blueviolet;
+}
+
+/* footer  */
+
+.footer{
+    margin-top: 70px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo-social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer_social{
+    display: flex;
+    gap: 20px;
+}
+
+.footer__title {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__list{
+    padding-top: 10px;
+}
+
+.footer__item {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #c5c2c2;
+}
+
+.footer__text {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+    color: #c5c2c2;
 }

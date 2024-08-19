@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__top">
+                <div class="nav__top-left">
+                    <p class="nav__top-site">Ваш регион:
+                        <span>
+                            <button class="navsite__moskov">Москва
+                                <img src="img/nav/StrokeBottom.png" alt="" class="sile__img">
+                            </button>
+                            <button class="navsite__SaintPetersburg">Санкт Петербург
+                                <img src="img/nav/StrokeBottom.png" alt="" class="sile__img">
+                            </button>
+                        </span>
+                    </p>
+                    <a href="84958854547" class="nav__phone"><img src="img/nav/mobile.png" alt="" class="phone__img">
+                        +7(495) 885-45-47
+                    </a>
+                </div>
+                <div class="nav_top-right">
+                    <ul class="nav__top-list">
+                        <li class="nav__top-link"><a href="" class="nav__top-item">О компании</a></li>
+                        <li class="nav__top-link"><a href="" class="nav__top-item">Гарантия и возврат</a></li>
+                        <li class="nav__top-link"><a href="" class="nav__top-item">Корпоративным клиентам</a></li>
+                        <li class="nav__top-link"><a href="" class="nav__top-item">Дизайн-решение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav__bottom">
+                <a href="/index.html" class="logo">
+                    <img src="img/nav/logo.svg" alt="" class="nav__logo">
+                </a>
+                <ul class="nav__bottom-list">
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Каталог</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Магазины</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Шоу-рум</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Доставка и оплата</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Дисконт</a></li>
+                    <li class="nav__bottom-link"><a href="" class="nav__bottom-item">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="nav__selection">
+                <form method="get" class="selection__wrapper">
+                    <button class="search">
+                        <img src="img/nav/search.png" alt="" class="selection__search-img">
+                    </button>
+                    <input placeholder="Я хочу купить..." type="text" class="selection__pop">
+                    <button class="arrow">
+                        <img class="selection__arrow-img" src="img/nav/arrow.png" alt="">
+                    </button>
+                </form>
+                <div class="selection__category">
+                    <button class="nav__category" id="category">
+                        <span>Категория</span>
+                        <img class="category__img" src="img/nav/StrokeBottom.png" alt="">
+                        <div class="category__cargo">
+                            <a href="" class="cargo">bdsg</a>
+                            <a href="" class="cargo">gsdf</a>
+                            <a href="" class="cargo">sfddf</a>
+                            <a href="" class="cargo">sdf</a>
+                            <a href="" class="cargo">sfdsf</a>
+                            <a href="" class="cargo">asc</a>
+                            <a href="" class="cargo">dsff</a>
+                            <a href="" class="cargo">vsv</a>
+                            <a href="" class="cargo">sdvdv</a>
+                        </div>
+                    </button>
+                </div>
+                <div class="nav__user-shoping">
+                    <a href="./user/user.html" class="user">
+                        <img src="img/nav/user.png" alt="" class="user__img">
+                    </a>
+                    <a href="./cart/cart.html" class="shoping">
+                        <img src="img/nav/shopping_cart.svg" alt="" class="shoping__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="filtr__catalog">
+        <div class="container">
+            <div class="nav__filtrcatalog">
+                <a href="">Главная /</a>
+                <a href="">Каталог /</a>
+                <a href="">Диваны /</a>
+                <a href="">Прямые диваны</a>
+            </div>
+            <div class="filtrcatalog">
+                <div class="filtr" id="filtre">
+                    <h1 class="filtr__title">Фильтровать по:</h1>
+                    <div class="category">
+                        <p class="category__text">
+                            Категория
+                        </p>
+                        <div class="category__podbor">
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="fornitur">
+                                <label class="furniture" for="fornitur">Диваны</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="chairs">
+                                <label class="furniture" for="chairs">Кресла</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Poufs">
+                                <label class="furniture" for="Poufs">Пуфы</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Beds">
+                                <label class="furniture" for="Beds">Кровати</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Curbstones">
+                                <label class="furniture" for="Curbstones">Тумбы</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Dressers">
+                                <label class="furniture" for="Dressers">Комоды</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Chairs">
+                                <label class="furniture" for="Chairs">Стулья</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Tables">
+                                <label class="furniture" for="Tables">Столы</label>
+                            </div>
+                            <div class="podbor">
+                                <input type="checkbox" class="furniture" id="Accessories">
+                                <label class="furniture" for="Accessories">Аксессуары</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p class="price__subtitle">Цена</p>
+                        <div class="price-input">
+                            <div class="field">
+                                <span>от</span>
+                                <input type="number" class="input-min" value="500">
+                            </div>
+                            <div class="separator"></div>
+                            <div class="field">
+                                <span>до</span>
+                                <input type="number" class="input-max" value="17500">
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="500">
+                            <input type="range" class="range-max" min="0" max="10000" value="17500" step="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="catalog.js"></script>
+</body>
+
+</html>
